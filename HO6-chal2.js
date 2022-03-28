@@ -51,9 +51,9 @@ switch (true)   {
         break;
 }
 
-{
+
     $("output").value = stringOutput;
-}; 
+
 
 window.onload = function () {
     $("troubleshoot").onclick = fixPrinter;
