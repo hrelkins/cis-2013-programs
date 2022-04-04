@@ -9,9 +9,9 @@ var $ = function (id)
 var do_it = function () 
 {
 
-	alert ("The Rectangle area is " + rectArea(floatRectWidth,floatRectHeight) + 
-	" and the perimeter is " + rectPerim (floatRectWidth,floatRectHeight) + 
-	"\n\n" + "The Triangle area is " + 	triangleArea(floatTriSide1,floatTriSide2,floatTriSide3) + 
+	alert("The Rectangle area is " + rectArea(floatRectWidth,floatRectHeight) + 
+	" and the perimeter is " + rectPerim(floatRectWidth,floatRectHeight) + 
+	"\n\n" + "The Triangle area is " + triangleArea(floatTriSide1,floatTriSide2,floatTriSide3) + 
 	" and the perimeter is " + 
 	trianglePerim(floatTriSide1,floatTriSide2,floatTriSide3) + "\n\n" +
 	"The Circle area is " + circleArea(floatRadius) + 
@@ -26,7 +26,7 @@ var calcRectArea = function()
     alert("The Rectangle area is " + rectArea(floatRectWidth, floatRectHeight));
 }
 
-function rectArea(floatRectWidth, floatRectHeight)
+function rectArea(floatRectWidth,floatRectHeight)
 {
     var floatRectArea = floatRectWidth * floatRectHeight;
     return floatRectArea.toFixed(2);
@@ -39,7 +39,7 @@ var calcRectPerim = function()
     alert("The Rectangle perimeter is " + rectPerim(floatRectWidth, floatRectHeight));
 }
 
-function rectPerim(floatRectWidth, floatRectHeight)
+function rectPerim(floatRectWidth,floatRectHeight)
 {
     var floatRectPerim = parseFloat(2 * floatRectWidth + 2 * floatRectHeight);
     return floatRectPerim.toFixed(2); 
@@ -54,7 +54,7 @@ var calcTriangleArea = function()
     alert("The Triangle Area is " + triangleArea(floatTriSide1,floatTriSide2,floatTriSide3));
 }
 
-function triangleArea(floatTriSide1, floatTriSide2, floatTriSide3)
+function triangleArea(floatTriSide1,floatTriSide2,floatTriSide3)
 {
     var floatS = (floatTriSide1 + floatTriSide2 + floatTriSide3) /2
     var floatTriangleArea = parseFloat(Math.sqrt((floatS*(floatS-floatTriSide1)*(floatS-floatTriSide2)*(floatS-floatTriSide3))));
@@ -66,10 +66,10 @@ var calcTrianglePerim = function()
     var floatTriSide1 = parseFloat($("tri_side1").value);
 	var floatTriSide2 = parseFloat($("tri_side2").value);	
 	var floatTriSide3 = parseFloat($("tri_side3").value);
-    alert("The Triangle perimeter is " + trianglePerim(floatTriSide1, floatTriSide2, floatTriSide3));
+    alert("The Triangle perimeter is " + trianglePerim(floatTriSide1,floatTriSide2,floatTriSide3));
 }
 
-function trianglePerim(floatTriSide1, floatTriSide2, floatTriSide3)
+function trianglePerim(floatTriSide1,floatTriSide2,floatTriSide3)
 {
     var floatTrianglePerim = floatTriSide1 + floatTriSide2 + floatTriSide3;
     return floatTrianglePerim.toFixed(2);
